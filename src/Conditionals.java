@@ -79,5 +79,4 @@ void main() {
     boolean intakeDisabled = false;
     boolean intakeEnabled = !intakeDisabled;
     System.out.println(intakeEnabled);
-
 }
