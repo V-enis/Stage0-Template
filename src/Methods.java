@@ -21,7 +21,7 @@ class ScoreKeeper {
     // `this(...)` to call the other constructor below, passing `MIN_SCORE`
     // as the argument.
     public ScoreKeeper() {
-        this.score = this.MIN_SCORE;
+        this.score = ScoreKeeper.MIN_SCORE;
     }
 
     // Write a constructor `ScoreKeeper(int startingScore)` that sets `score`
@@ -49,7 +49,7 @@ class ScoreKeeper {
     public void applyPenalty(int points) {
         int newScore = this.score - points;
         if (newScore < 0) {
-            this.score = this.MIN_SCORE;
+            this.score = ScoreKeeper.MIN_SCORE;
         } else {
             this.score = newScore;
         }
@@ -72,7 +72,7 @@ class ScoreKeeper {
     // Write a method `reset()` that sets `score` back to `MIN_SCORE`,
     // reusing the constant rather than writing `0` directly.
     public void reset() {
-        this.score = this.MIN_SCORE;
+        this.score = ScoreKeeper.MIN_SCORE;
     }
 }
 
